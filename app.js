@@ -10,11 +10,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use("/admin", adminRoutes);
 // place the custom routes
 app.use(shopRoutes);
-
-app.use((req, res, next) => {
-  console.log("1 st middleware");
-  next(); // this allow to request to next middleware
-});
+app.use(express.static(path.join(__dirname, "public")));
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "views", "404.html"));
 });
