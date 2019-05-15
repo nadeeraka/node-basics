@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express();
+const bodyparser = require("body-parser");
+
+app.use(bodyparser.urlencoded({ extended: false }));
+// using bodyparser to extrate data that in the request body
 
 app.use((req, res, next) => {
   console.log("1 st middleware");
