@@ -4,22 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
     <title>Add product</title>
   </head>
   <body>
@@ -36,36 +26,12 @@
     </header>
 
     <div class="container">
-      <h3 class="mt-4 mb-4">Add product page</h3>
-    </div>
-    <div class="form mt-4">
-      <div class="container">
-        <form action="/" method="POST">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-            />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Add product</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              placeholder="Add product"
-            />
-          </div>
-          <button type="submit" class="btn-my">Submit</button>
-        </form>
-      </div>
+      <form action="/add-product" method="POST">
+        <div class="input-group" style="height: 40px;">
+          <input type="text" placeholder="Add a product" />
+          <button class="btn-my">Submit</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
