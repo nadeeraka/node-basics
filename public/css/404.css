@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Stylish");
 
 * {
   margin: 0;
@@ -6,14 +7,12 @@
   font-family: "Roboto", sans-serif;
 }
 .container {
-  margin-top: 2.6rem;
-  padding-left: 100px;
-}
-.imp {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 12.6rem;
+  padding-left: 350px;
 }
 .h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Stylish", sans-serif;
+  font-size: 50px;
   font-weight: 400;
   margin-left: 100px;
 }
@@ -22,7 +21,6 @@
   width: 100%;
   height: 60px;
   background-color: rgb(240, 221, 51);
-  border-bottom: 3px solid black;
 }
 
 .list-item {

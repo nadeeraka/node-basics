@@ -33,6 +33,7 @@
   width: 100%;
   height: 60px;
   background-color: rgb(240, 221, 51);
+  border-bottom: 3px solid black;
 }
 
 .list-item {
