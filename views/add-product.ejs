@@ -12,19 +12,8 @@
     />
     <title><%= title %></title>
   </head>
+  <%- include('includes/nav.ejs') %>
   <body>
-    <header>
-      <div class="nav">
-        <nav>
-          <ul class="list-item">
-            <li class="item"><a href="/">Home</a></li>
-            <li class="item"><a href="/add-product">Add product</a></li>
-            <li class="item"><a href="/admin">Admin</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <div class="container">
       <form action="/add-product" method="POST">
         <div class="input-group" style="height: 40px;">
