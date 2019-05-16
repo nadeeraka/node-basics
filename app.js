@@ -5,6 +5,9 @@ const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 const path = require("path");
 
+app.set("view engine", "ejs");
+app.set("views", "views");
+
 app.use(bodyparser.urlencoded({ extended: false }));
 // using bodyparser to extrate data that in the request body
 app.use("/admin", adminRoutes);
@@ -12,7 +15,8 @@ app.use("/admin", adminRoutes);
 app.use(shopRoutes.routes);
 app.use(express.static(path.join(__dirname, "public")));
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "views", "404.html"));
+  //res.sendFile(path.join(__dirname, "views", "404.html"));
+  res.render("404", { title: "404" });
 });
 
 const port = 8080 || process.env.port;
